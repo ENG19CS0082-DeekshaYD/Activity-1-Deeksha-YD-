@@ -33,7 +33,7 @@ Fract simplify(Fract sum)
 	sum.Deno=sum.Deno/gcd;
 	return sum;
 }
-Fract compute_sum(Fract f1, Fract f2)
+Fract add_fraction(Fract f1, Fract f2)
 {
     Fract sum;
     sum.Num=(f1.Num*f2.Deno)+(f2.Num*f1.Deno);
@@ -50,7 +50,7 @@ int main()
 	Fract f1,f2,sum;
 	f1=input(1);
 	f2=input(2);
-	sum=compute_sum(f1,f2);
+	sum=add_fraction(f1,f2);
 	display_sum(f1,f2,sum);
 	return 0;
 }
