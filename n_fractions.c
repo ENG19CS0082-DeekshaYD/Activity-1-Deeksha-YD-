@@ -4,7 +4,7 @@
 struct fraction
 {
     int Num,Deno;
-}
+};
 typedef struct fraction Fract;
 int get_n(int n)
 {
