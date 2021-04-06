@@ -32,7 +32,7 @@ Fract sum(Fract a, Fract b)
     Fract res;
     if (a.Deno==b.Deno)
     {
-        res.Deno=a.Deno;
+        res.Deno=a.Deno
         res.Num=a.Num+b.Num;
     }
     else
