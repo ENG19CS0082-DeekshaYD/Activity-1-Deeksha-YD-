@@ -1,4 +1,5 @@
 //WAP to find the sum of n fractions.
+
 #include <stdio.h>
 struct fraction
 {
