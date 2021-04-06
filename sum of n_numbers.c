@@ -1,5 +1,4 @@
 //Write a program to add n different numbers
-
 #include<stdio.h>
 int input_n()
 {
