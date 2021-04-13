@@ -1,4 +1,5 @@
 //WAP to find the sum of n fractions.
+
 #include <stdio.h>
 
 struct fraction
@@ -84,3 +85,5 @@ int main()
     result=compute_sum(fraction);
     output(result);
 }
+
+
