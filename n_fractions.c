@@ -62,6 +62,7 @@ Fract compute_sum(Fract c)
 
 Fract add_fraction(int n, Fract c, Fract a[])
 {
+    Fract c.Num=0;c.Deno=1;
     for(int i=0;i<n;i++)
     {
         c=sum(c,a[i]);
@@ -76,8 +77,6 @@ int main()
 {
     int n=get_n(n);
     Fract c,a[n],fraction,result;
-    c.Num=0;
-    c.Deno=1;
     get_fract(n,a);
     fraction=add_fraction(n,c,a);
     result=compute_sum(fraction);
