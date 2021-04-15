@@ -1,5 +1,4 @@
 //WAP to find the sum of n complex numbers using structures and 4 or more functions.
-
 #include<stdio.h>
 struct student
 {
@@ -18,12 +17,9 @@ int num_students;
 stud student[200];
 };
 typedef struct gradebook gb;
-void input(gb *onegb)
+void input_gb(gb *onegb)
 
 {
-  int n;
-printf("enter the number of gradebooks:\n");
-scanf("%d",&n);
 printf("enter the course name:\n");
 scanf("%s",onegb->subject);
 printf("enter the no of students:\n");
@@ -46,10 +42,16 @@ scanf("%d",&onegb->student[j].marks[k]);
 }
 }
 }
+int input(int n)
+{
+ printf("enter the number of gradebooks:\n");
+ scanf("%d",&n);
+  return n;
+}
 void input_n(int n,gb a[ ])
 {
 for(int i=0;i<n;i++)
-input(&a[i]);
+input_gb(&a[i]);
 }
 char grade( float r)
 {
@@ -106,12 +108,10 @@ output(&a[i]);
 }
 int main()
 {
-
-int n;
+int n=input(n);
 gb a[n];
 input_n(n,a);
 compute_n(n,a);
 output_n(n,a);
 return 0;
 }
-
