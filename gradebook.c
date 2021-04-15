@@ -43,8 +43,9 @@ scanf("%d",&onegb->student[j].marks[k]);
 }
 }
 }
-int input(int n)
+int input()
 {
+ int n;
  printf("enter the number of gradebooks:\n");
  scanf("%d",&n);
   return n;
