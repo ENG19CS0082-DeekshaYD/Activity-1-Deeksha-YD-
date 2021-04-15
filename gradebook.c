@@ -110,7 +110,7 @@ output(&a[i]);
 }
 int main()
 {
-int n=input(n);
+int n=input();
 gb a[n];
 input_n(n,a);
 compute_n(n,a);
