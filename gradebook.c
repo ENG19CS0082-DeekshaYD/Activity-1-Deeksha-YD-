@@ -21,6 +21,9 @@ typedef struct gradebook gb;
 void input(gb *onegb)
 
 {
+  int n;
+printf("enter the number of gradebooks:\n");
+scanf("%d",&n);
 printf("enter the course name:\n");
 scanf("%s",onegb->subject);
 printf("enter the no of students:\n");
@@ -105,8 +108,6 @@ int main()
 {
 
 int n;
-printf("enter the number of gradebooks:\n");
-scanf("%d",&n);
 gb a[n];
 input_n(n,a);
 compute_n(n,a);
