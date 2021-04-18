@@ -20,6 +20,21 @@ void input_1 (emp * one)
     printf ("Enter the name of employee and hourly wage: \n");
     scanf ("%s%f", one->name, &one->Hwage);
 }
+int input_em()
+{
+    int n;
+    printf ("Enter the number of employee: \n");
+    scanf ("%d", &n);
+    return n;
+}
+int input_timecd()
+{
+    int m;
+    printf ("Enter the number of time cards: \n");
+    scanf ("%d", &m);
+    return m;
+}
+
 void input_n (int n, emp em[])
 {
     for (int i = 0; i < n; i++)
@@ -77,13 +92,10 @@ void output_n (int n, emp em[])
 }
 int main ()
 {
-    int n, m;
-    printf ("Enter the number of employee: \n");
-    scanf ("%d", &n);
+    int n=input_em();
     emp em[n];
     input_n (n, em);
-    printf ("Enter the number of time cards: \n");
-    scanf ("%d", &m);
+    int m=input_timecd();
     time_card tc[m];
     input_tc (m, tc);
     compute_n (n, em, m, tc);
